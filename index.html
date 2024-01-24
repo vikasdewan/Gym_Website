@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikas Fitness GYM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caprasimo&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caprasimo&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caprasimo&family=Lilita+One&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Bungee+Spice&family=Caprasimo&family=Concert+One&family=Lilita+One&display=swap" rel="stylesheet">
+<style>
+    /* CSS RESET */
+
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('bg1.jpg');
+        font-family: 'Lilita One', cursive;
+    height: 1050px;
+
+    }
+
+    .left {
+        /* border: 4px solid red; */
+
+        display: inline-block;
+        position: absolute;
+        line-height: 15px;
+        font-size: 18px;
+        top: 18px;
+        left: 34px;
+    }
+
+    .left img {
+        width: 84px;
+        filter: invert(1);
+        align-items: center;
+        padding: 2px 28px;
+
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .mid {
+        /* border: 4px solid green; */
+        display: block;
+        width: 38%;
+        margin: 18px auto;
+
+
+    }
+
+    .right {
+        /* border: 2px solid yellow; */
+        position: absolute;
+        right: 34px;
+        top: 40px;
+    }
+    .right .btn:hover{
+        color:rgb(249, 25, 9)
+    }
+
+    .navbar {
+        
+        margin: 34px -12px;
+    display: inline-block;
+    font-size: 26px;
+}
+    
+
+    .navbar li {
+        display: inline-block;
+        font-size: 22px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(255, 7, 7);
+    }
+
+    .btn {
+        margin: 1px 5px;
+        background-color: grey;
+        color: white;
+        padding: 4px 10px;
+        border: 2px solid rgb(3, 3, 3);
+        border-radius: 9px;
+        font-size: 17px;
+        cursor: pointer;
+        font-family: 'Caprasimo', cursive;
+        display: inline-block;
+    }
+
+    .btn:hover {
+        background-color: rgb(98, 97, 97);
+    }
+
+    .container {
+        /* border: 2px solid red; */
+        margin: 110px 50px;
+    padding: 83px 42px;
+    border-radius: 20px;
+    width: 35%;
+}
+    
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 345px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 14px auto;
+        border-radius: 23px;
+        font-family: 'Lilita One', cursive;
+       font-size: 22px;
+         
+    }
+    .form-group input:hover{
+        background-color: rgb(249, 149, 149);
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 120px;
+        margin: auto;
+    } 
+    .container button:hover{
+        color:rgb(243, 169, 10);
+    }
+    .cssmarquee {
+height: 50px;
+overflow: hidden;
+position: relative;
+}
+
+.cssmarquee h1 {    font-size: 3em;
+    color:white;
+    position: relative;
+    width: 929px;
+    height: 693px;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(10%);
+    animation: cssmarquee 11s linear infinite;
+    top: -4px;
+}
+.cssmarquee h1:hover{
+    color: red;
+}
+
+@keyframes cssmarquee {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo1.png" alt="">
+            <div>
+                Vikas Fitness GYM
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> Call Us</button>
+            <button class="btn"> email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of Bhilai Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="cssmarquee">
+        
+            <h1>!! Achive your Dream Physic Here !!</h1>
+            </div>
+        </body>
+    </html>
+    
+        </p>
+    </div>
+</body>
+
+</html>
